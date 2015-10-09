@@ -8,7 +8,7 @@ set :repo_url, "git@github.com:benubois/#{fetch(:application)}.git"
 # set :branch, "master"
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/#{fetch(:application)}"
+# set :deploy_to, "/var/www/cap"
 
 namespace :deploy do
 
