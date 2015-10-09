@@ -12,9 +12,9 @@ set :repo_url, "git@github.com:benubois/#{fetch(:application)}.git"
 
 namespace :deploy do
 
-  after :restart, :clear_cache do
+  after :finishing, :remove_deploy do
     on roles(:web) do
-
+      execute "cd #{release_path} && rm -Rf .deploy"
     end
   end
 
